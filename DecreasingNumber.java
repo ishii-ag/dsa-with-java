@@ -1,4 +1,4 @@
-package Recursion;
+
 public class DecreasingNumber {
 
     public static void Decreasing(int n) {

@@ -1,4 +1,4 @@
-package Recursion;
+
 
 public class SumOfDigits {
     public static int SumOD(int n) {

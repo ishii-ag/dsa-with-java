@@ -1,4 +1,3 @@
-package Recursion;
 
 public class NthFib {
     public static int fib(int n) {

@@ -1,4 +1,4 @@
-package Recursion;
+
 public class SumOfN {
     public static int sum(int n) {
         if (n == 1) {

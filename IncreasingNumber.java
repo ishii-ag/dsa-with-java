@@ -1,4 +1,3 @@
-package Recursion;
 
 public class IncreasingNumber {
     public static void increasing(int n) {
