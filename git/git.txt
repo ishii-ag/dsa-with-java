@@ -1,0 +1,95 @@
+# Git Commands Reference
+
+## SETUP & CONFIGURATION
+
+git config --global user.name "[name]"
+- Sets the name you want attached to your commit transactions
+- Use: Configure your identity for proper commit attribution
+
+git config --global user.email "[email]"
+- Sets the email you want attached to your commit transactions
+- Use: Link commits to your email for services like GitHub
+
+git init
+- Initializes a new git repository in current directory
+- Use: Start version control for a new project
+
+## BASIC WORKFLOW
+
+git status
+- Shows the working tree status
+- Use: Check which files are modified, staged, or untracked
+
+git add [file]
+- Adds file contents to the staging area
+- Use: Prepare files for committing
+
+git add .
+- Adds all modified and new files to staging area
+- Use: Stage all changes at once
+
+git commit -m "[message]"
+- Records changes to the repository with a message
+- Use: Save staged changes with descriptive comment
+
+git log
+- Shows commit history
+- Use: Review project history and changes
+
+## BRANCHING & MERGING
+
+git branch
+- Lists all local branches
+- Use: View available branches
+
+git branch [branch-name]
+- Creates a new branch
+- Use: Start working on a new feature without affecting main code
+
+git checkout [branch-name]
+- Switches to specified branch
+- Use: Change to another line of development
+
+git merge [branch-name]
+- Merges specified branch into current branch
+- Use: Combine changes from different branches
+
+git branch -d [branch-name]
+- Deletes a branch
+- Use: Remove branches after merging or abandoning work
+
+## REMOTE REPOSITORIES
+
+git clone [url]
+- Clones a repository into a new directory
+- Use: Download a remote repository to work locally
+
+git remote add [name] [url]
+- Adds a remote repository
+- Use: Connect local repository to remote server
+
+git push [remote] [branch]
+- Updates remote refs and associated objects
+- Use: Upload local changes to remote repository
+
+git pull [remote]
+- Fetches from remote and merges
+- Use: Get latest changes from remote repository
+
+git fetch [remote]
+- Downloads objects and refs from remote
+- Use: Retrieve remote content without merging
+
+## INSPECTION & COMPARISON
+
+git diff
+- Shows unstaged changes
+- Use: View differences between working directory and staging area
+
+git diff --staged
+- Shows staged changes
+- Use: View differences between staging area and last commit
+
+git show [commit]
+- Shows commit information and changes
+- Use: Examine specific commit details

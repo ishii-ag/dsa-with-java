@@ -1,0 +1,101 @@
+Essential Git Commands After Creating a Repository
+After creating a new repository (either via git init or by cloning), here are the key commands you'll need for your workflow:
+
+=> Initial Setup After Creating a Repository
+--------------------------------------------------------------------
+# If you created a new local repository (git init)
+git remote add origin https://github.com/username/repository.git
+
+# Configure local repository settings (if needed)
+git config user.name "Your Name"
+git config user.email "your.email@company.com"
+--------------------------------------------------------------------
+
+Daily Development Workflow
+1. Check Status and Pull Updates
+--------------------------------------------------------------------
+# See what branch you're on and file status
+git status
+
+# Get latest changes from remote repository
+git pull
+--------------------------------------------------------------------
+
+2. Create and Switch Branches
+--------------------------------------------------------------------
+# Create a new branch for your feature/fix
+git checkout -b feature/new-feature
+
+# Switch between existing branches
+git checkout main
+--------------------------------------------------------------------
+
+3. Track, Stage, and Commit Changes
+--------------------------------------------------------------------
+# See what's changed
+git diff
+
+# Stage files for commit
+git add filename.ext       # Stage specific file
+git add .                  # Stage all changes
+
+# Commit staged changes
+git commit -m "Descriptive message about changes"
+--------------------------------------------------------------------
+
+4. Push Changes to Remote
+--------------------------------------------------------------------
+# First time pushing a new branch
+git push -u origin feature/new-feature
+
+# Subsequent pushes to the same branch
+git push
+--------------------------------------------------------------------
+
+5. Merge Changes
+--------------------------------------------------------------------
+# Switch to target branch
+git checkout main
+
+# Get latest changes from remote
+git pull
+
+# Merge your feature branch
+git merge feature/new-feature
+
+# Push the merged changes
+git push
+--------------------------------------------------------------------
+
+6. Handle Merge Conflicts
+--------------------------------------------------------------------
+# When merge conflicts occur, edit conflicted files
+# After resolving conflicts
+git add .
+git commit -m "Resolve merge conflicts"
+--------------------------------------------------------------------
+
+7. Clean Up
+--------------------------------------------------------------------
+# Delete local branch after merging
+git branch -d feature/new-feature
+
+# Delete remote branch if needed
+git push origin --delete feature/new-feature
+--------------------------------------------------------------------
+
+Other Commonly Used Commands
+--------------------------------------------------------------------
+# View commit history
+git log --oneline
+
+# Temporarily stash changes
+git stash
+git stash pop
+
+# Discard local changes
+git restore filename.ext
+
+# See differences between branches
+git diff branch1..branch2
+--------------------------------------------------------------------
