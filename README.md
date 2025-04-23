@@ -104,7 +104,7 @@ We cover a wide range of fundamental topics:
 
 1.  **Clone the Repository:**
     ```bash
-  https://github.com/ishii-ag/dsa-with-java.git
+       https://github.com/ishii-ag/dsa-with-java.git
     ```
 
 2.  **Navigate to the Visualizations:** Explore the directories corresponding to the data structures and algorithms you're interested in. Each section should contain the Java code and the associated visualization files (e.g., `.java` files for GUI applications, `.html` with JavaScript for web-based visualizations).
