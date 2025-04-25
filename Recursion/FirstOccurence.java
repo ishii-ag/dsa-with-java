@@ -1,3 +1,4 @@
+package Recursion;
 public class FirstOccurence {
     public static int FirstOccurence(int arr[], int key, int i) {
         if (arr.length == 0) {

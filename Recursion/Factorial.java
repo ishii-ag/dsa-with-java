@@ -1,3 +1,4 @@
+package Recursion;
 public class Factorial {
     public static int Fact(int n) {
         return n * Fact(n - 1);

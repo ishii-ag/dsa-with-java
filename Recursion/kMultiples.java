@@ -1,3 +1,4 @@
+package Recursion;
 
 class kMultiples {
     public static void multiples(int n, int k) {
